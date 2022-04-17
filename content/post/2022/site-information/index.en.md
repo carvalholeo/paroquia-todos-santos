@@ -17,7 +17,7 @@ Mathew 28.19-20
 
 - - -
 
-We know: you came here finding more information about All Saint's Church in English.
+We know: you came here finding more information about All Saints' Church in English.
 
 For now, we're using a free content management system, hosted at a free server. Then, it's too hard to maintain a double, separate version.
 
