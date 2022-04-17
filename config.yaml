@@ -2,7 +2,7 @@ baseurl: https://paroquiatodossantos.netlify.app
 languageCode: pt-br
 theme: hugo-theme-stack
 paginate: 5
-title: Igreja Anglicana de Todos Santos
+title: Igreja de Todos Santos
 
 languages:
     en:
@@ -11,14 +11,14 @@ languages:
         weight: 1
     pt-br:
         languageName: Português
-        title: Igreja Anglicana de Todos Santos
+        title: Igreja de Todos Santos
         weight: 2
 
 # Change it to your Disqus shortname before using
 disqusShortname: paroquiatodosossantos
 
 # GA Tracking ID
-googleAnalytics:
+googleAnalytics: G-HLVRYXHMN9
 
 # Theme i18n support
 # Available values: ar, ca, de, el, en, es, fr, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -40,8 +40,8 @@ params:
     favicon:
 
     footer:
-        since: 1914
-        customText:
+        since: 1918
+        customText: Pároquia Anglicana de Todos os Santos, em Santos/SP - Brasil
 
     dateFormat:
         published: Jan 02, 2006
@@ -49,7 +49,7 @@ params:
 
     sidebar:
         emoji:
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: Comunidade da Diocese Anglicana de São Paulo, da Igreja Episcopal Anglicana do Brasil.
         avatar:
             enabled: true
             local: true
@@ -61,7 +61,7 @@ params:
         readingTime: true
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: Licenciado sob CC BY-NC-SA 4.0
 
     comments:
         enabled: true
@@ -190,17 +190,17 @@ menu:
     main: []
 
     social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+        - identifier: facebook
+          name: Facebook
+          url: https://www.facebook.com/anglicanasantos
           params:
-              icon: brand-github
+              icon: brand-facebook
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+        # - identifier: twitter
+        #   name: Twitter
+        #   url: https://twitter.com
+        #   params:
+        #       icon: brand-twitter
 
 related:
     includeNewer: true
