@@ -1,3 +1,6 @@
 [submodule "themes/hugo-theme-stack"]
 	path = themes/hugo-theme-stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "static/admin"]
+	path = static/admin
+	url = https://github.com/carvalholeo/netlify-cms-base.git
