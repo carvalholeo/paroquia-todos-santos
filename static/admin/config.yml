@@ -3,7 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 
 # when using the default proxy server port
-local_backend: true
+local_backend: false
 
 publish_mode: editorial_workflow
 
