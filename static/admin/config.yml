@@ -1,0 +1,123 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# when using the default proxy server port
+local_backend: true
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/img/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /img/uploads
+
+site_url: https://paroquiatodossantos.netlify.app
+display_url: https://paroquiatodossantos.netlify.app
+logo_url: https://paroquiatodossantos.netlify.app/img/profile.jpg
+
+locale: 'pt'
+
+show_preview_links: true
+
+search: true
+
+collections:
+
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    path: "{{year}}/{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Slug template, e.g., title
+    fields: # The fields for each document, usually in front matter
+      - label: "Título"
+        name: "title"
+        widget: "string"
+
+      - label: "Descrição"
+        name: "description"
+        widget: "string"
+
+      - label: "Data de Publicação"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categorias"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Imagem"
+        name: "image"
+        required: false
+        widget: "image"
+        default: "/images/uploads/cover-post.jpg"
+
+      - label: "Conteúdo"
+        name: "body"
+        widget: "markdown"
+
+  # - name: "pages" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Pages" # Used in the UI
+  #   folder: "content/page" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   path: "{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   slug: "{{slug}}" # Slug template, e.g., title
+  #   fields: # The fields for each document, usually in front matter
+
+  #     - label: "Title"
+  #       name: "title"
+  #       widget: "string"
+
+  #     - label: "Publish Date"
+  #       name: "date"
+  #       required: false
+  #       widget: "datetime"
+
+  #     - label: "Categories"
+  #       name: "categories"
+  #       required: false
+  #       widget: "list"
+
+  #     - label: "Tags"
+  #       name: "tags"
+  #       required: false
+  #       widget: "list"
+
+  #     - label: "Keywords"
+  #       name: "keywords"
+  #       required: false
+  #       widget: "list"
+
+  #     - label: "Auto Thumbnail Image"
+  #       name: "autoThumbnailImage"
+  #       required: false
+  #       widget: "boolean"
+  #       default: false
+
+  #     - label: "Thumbnail Image Position"
+  #       name: "thumbnailImagePosition"
+  #       required: false
+  #       widget: "select"
+  #       default: "top"
+  #       options: ["left", "top", "right"]
+
+  #     - label: "Thumbnail Image"
+  #       name: "thumbnailImage"
+  #       required: false
+  #       widget: "image"
+
+  #     - label: "Cover Image"
+  #       name: "coverImage"
+  #       required: false
+  #       widget: "image"
+  #       default: "/images/uploads/cover-post.jpg"
+
+  #     - label: "Body"
+  #       name: "body"
+  #       widget: "markdown"
