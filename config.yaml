@@ -159,7 +159,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: santosanglicana
 
             # Available values: summary, summary_large_image
             card: summary_large_image
@@ -196,11 +196,23 @@ menu:
           params:
               icon: brand-facebook
 
-        # - identifier: twitter
-        #   name: Twitter
-        #   url: https://twitter.com
-        #   params:
-        #       icon: brand-twitter
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com/santosanglicana
+          params:
+              icon: brand-twitter
+
+        - identifier: instagram
+          name: Instagram
+          url: https://instagram.com/santosanglicana
+          params:
+              icon: brand-instagram
+
+        - identifier: youtube
+          name: YouTube
+          url: https://www.youtube.com/channel/UCDf4ZbpxyAtHGT4ou92q-Kw
+          params:
+              icon: brand-youtube
 
 related:
     includeNewer: true
